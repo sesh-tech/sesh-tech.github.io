@@ -3,3 +3,40 @@
 {% include analytics.html %}
 
 {% include comments-providers/scripts.html %}
+
+<!-- Footer visibility: show footer only when scrolled to bottom -->
+<script>
+(function(){
+	var footer = document.querySelector('.page__footer');
+	if(!footer) return;
+	var hiddenClass = 'hidden-until-bottom';
+	// ensure hidden initially
+	footer.classList.add(hiddenClass);
+
+	function isAtBottom(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+		var fullHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+		return (viewportHeight + scrollTop) >= (fullHeight - 2);
+	}
+
+	function update(){
+		if(isAtBottom()){
+			if(footer.classList.contains(hiddenClass)){
+				footer.classList.remove(hiddenClass);
+				window.dispatchEvent(new Event('resize'));
+			}
+		} else {
+			if(!footer.classList.contains(hiddenClass)){
+				footer.classList.add(hiddenClass);
+				window.dispatchEvent(new Event('resize'));
+			}
+		}
+	}
+
+	// initial check after scripts run
+	setTimeout(update, 50);
+	window.addEventListener('scroll', update, {passive:true});
+	window.addEventListener('resize', update);
+})();
+</script>

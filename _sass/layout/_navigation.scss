@@ -226,9 +226,17 @@
     }
 
     #theme-toggle {
+      position: absolute;
+      right: 3.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 101;
+
       a {
         width: 25px;
+        height: 2.5rem;
         display: flex;
+        align-items: center;
         justify-content: center;
         cursor: pointer;
       }

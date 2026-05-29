@@ -94,3 +94,9 @@
     }
   }
 }
+
+/* Hide footer until the user scrolls to the bottom of the page. The JS
+   will remove this class when the bottom is reached. */
+.page__footer.hidden-until-bottom {
+  display: none;
+}
