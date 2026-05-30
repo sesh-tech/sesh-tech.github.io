@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
 published: true
 redirect_from: 
@@ -8,46 +8,115 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+Hi, I'm Sesh (Seshagopalan Thorapalli Muralidharan), a mechatronics engineer, roboticist, and researcher working at the intersection of robotics, machine design, embedded systems, and control engineering. I am currently finishing a Ph.D. in Machine Design at **KTH Royal Institute of Technology** in Stockholm, Sweden.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+My research focuses on the challenges involved in creating robotic systems that can safely and effectively interact with the physical world. I am particularly interested in how mechanical design, sensing, control, and learning contribute to robust, adaptable, and expressive behavior.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## Research Areas
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+* Robotics and Intelligent Mechatronics
+* Soft and Compliant Robotics
+* Embedded Sensing and Proprioception
+* Control, Learning and System Identification
+* Robot Design and Optimization
+* Rapid Prototyping and Experimental Robotics
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## Research
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+My work has explored topics including:
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+* Designing robotic systems that are safe, expressive, and effective during interaction with people.
+* Developing sensing and perception capabilities that enable physical systems to estimate and understand their own state.
+* Improving the stability, adaptability, and robustness of compliant robotic systems through control and learning.
+* Investigating how mechanical design influences the capabilities and behavior of robotic systems.
+* Applying machine learning techniques, including continual learning and reinforcement learning, to physical systems.
+* Developing low-cost embedded diagnostic and instrumentation platforms for healthcare and sensing applications.
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+## Education
 
-**Markdown generator**
+**Ph.D. in Machine Design (Mechatronics)** *(2022–Present)*
+KTH Royal Institute of Technology, Sweden
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+**M.Sc. in Engineering Design (Mechatronics)** *(2018–2020)*
+KTH Royal Institute of Technology, Sweden
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**B.Tech. in Mechanical Engineering** *(2014–2018)*
+Ramaiah University of Applied Sciences, India
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+## Early Research Experience
+
+Before joining KTH, I worked on robotics and experimental engineering projects in Bangalore, India, including research internships at the Robotics and Design Lab at the Indian Institute of Science (IISc) and the Open Circuit Wind Tunnel Laboratory. These experiences sparked my interest in intelligent physical systems and experimental research.
+
+## Teaching & Mentorship
+
+Teaching and mentorship have been an important part of my academic journey.
+
+I have served as a teaching assistant across multiple undergraduate and graduate courses, supervised master's thesis projects, mentored student researchers, and coached engineering teams.
+
+Through teaching, supervision, examination, and project mentorship, I have worked with more than 400 students, helping them develop both technical depth and systems-level engineering thinking.
+
+## Engineering Perspective
+
+I approach problems from both a research and engineering perspective. Whether developing a robotic platform, an embedded electronic system, a sensing architecture, or a control framework, I am interested in translating ideas into systems that can be built, tested, and deployed.
+
+I believe impactful research should not only advance knowledge, but also withstand the realities of implementation, experimentation, and real-world use.
+
+## Selected Publications
+
+### Synthesizing the Optimal Gait of a Quadruped Robot with Soft Actuators Using Deep Reinforcement Learning
+
+Q. Ji, S. Fu, K. Tan, **S. Thorapalli Muralidharan**, K. Lagrelius, D. Danelia, G. Andrikopoulos, X. V. Wang, L. Wang, and L. Feng
+
+*Robotics and Computer-Integrated Manufacturing (RCIM), 2022*
+
+Applied deep reinforcement learning to synthesize locomotion policies for a tendon-driven soft quadruped robot, bridging soft robotics, control, and machine learning.
+
+[[Paper]](https://doi.org/10.1016/j.rcim.2022.102382)
+
+---
+
+### Lab-on-PCB with Integrated DNA Amplification and Electroanalytical Detection for Point-of-Care Diagnostics
+
+**S. Thorapalli Muralidharan**, M. Hanze, A. Ainla, B. Möller, M. M. Hamedi, and A. Toldrà
+
+*Scientific Reports, 2025*
+
+Developed a low-cost PCB-based diagnostic platform integrating nucleic acid amplification and electrochemical detection for point-of-care healthcare applications.
+
+[[Paper]](https://doi.org/10.1038/s41598-025-12364-1)
+
+---
+
+### Design, Development and Evaluation of a Soft Robotic Eye Actuator for the Social Robot HARU
+
+**S. Thorapalli Muralidharan**, A. Lindestam, R. Gomez, and G. Andrikopoulos
+
+*IEEE Access, 2026*
+
+Designed and experimentally evaluated a fully 3D-printed tendon-driven soft robotic eye actuator for expressive and safe human-robot interaction.
+
+Under Review
+
+---
+
+### On Vibration Suppression of a Tendon-Driven Soft Robotic Neck for the Social Robot HARU
+
+**S. Thorapalli Muralidharan**, R. Gomez, and G. Andrikopoulos
+
+*Frontiers in Robotics and AI, 2026*
+
+Proposed a control strategy for suppressing vibrations in compliant robotic systems while preserving safe and expressive motion.
+
+[[Paper]](https://doi.org/10.3389/frobt.2025.1698343)
+
+---
+
+### Integration and Continual Learning-Based Modeling of a Soft Robotic Sensor for Social Robot Proprioception
+
+P. C. Hau, **S. Thorapalli Muralidharan**, R. Gomez, and G. Andrikopoulos
+
+*IEEE International Conference on Robotics and Automation (ICRA), 2026*
+
+Combined embedded sensing and continual learning to enable proprioception in compliant robotic systems.
+
+[[Paper]](https://www.kth.se/mmk/mechatronics/laboratories/robot-design-lab/robotdesignlabnews/new-publication-on-integration-and-continual-learning-based-modeling-of-a-soft-robotic-sensor-1.1460733)
